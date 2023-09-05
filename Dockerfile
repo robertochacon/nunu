@@ -1,9 +1,6 @@
 # CARGAMOS IMAGEN DE PHP MODO ALPINE SUPER REDUCIDA
 FROM elrincondeisma/octane:latest
 
-# Install system dependencies
-RUN apt-get install libssh2-1-dev libssh2-1
-
 RUN curl -sS https://getcomposer.org/installer​ | php -- \
      --install-dir=/usr/local/bin --filename=composer
 
